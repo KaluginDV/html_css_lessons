@@ -16,3 +16,19 @@ h1 {
     text-transform: uppercase;
 }
 
+hr {
+    width: 600px;
+}
+
+p {
+    width: 500px;
+    margin: 0 auto auto;
+    padding-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
