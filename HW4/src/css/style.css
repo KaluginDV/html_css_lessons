@@ -5,6 +5,7 @@
 
 header {
     position: relative;
+    height: 50px;
 }
 
 nav {
@@ -12,6 +13,7 @@ nav {
     width: 100%;
     height: 50px;
     background-color: #212121;
+    z-index: 2;
 }
 
 .menu {
@@ -35,6 +37,7 @@ nav {
 
 .subheader {
     position: absolute;
+    top: 50px;
     width: 100%;
     height: 84px;
     background-color: rgba(0,0,0,.6);
@@ -92,7 +95,7 @@ nav {
 .promo {
     min-height: 800px;
     background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
-    padding: 150px 0 135px 0;
+    padding: 200px 0 135px 0;
 }
 
 .promo .promo_header {
@@ -143,5 +146,59 @@ nav {
 }
 
 .reasons {
-    min-height: 900px;
+    padding: 71px 0 65px 0;
+}
+
+.reasons .label {
+    margin: 0 auto;
+    padding: 5px 12px;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.reasons .title {
+    margin-bottom: 0;
+    margin-top: 38px;
+    text-align: center;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reasons .reasons_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reasons .reasons_card .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_card .reasons_card_text {
+    width: 343px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.reasons .reasons_card .reasons_card_text span{
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
 }
