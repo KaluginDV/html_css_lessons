@@ -1,6 +1,11 @@
 $main-color: #1eacc7
 $second-color: #ff5656
   
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $main-color
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -22,12 +27,12 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu_link
+  &_link
     color: #ffffff
     font-size: 15px
     font-weight: 300
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 28px
 
@@ -38,26 +43,26 @@ nav
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_logo
+  &_logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader_official
+  &_official
     margin-top: 6px
     opacity: 0.5
     color: #ffffff
     font-size: 13px
     font-weight: 400
 
-  .subheader_call
+  &_call
     text-align: right
     margin-top: 19px
     color: #ffffff
     font-size: 12px
     font-weight: 300
 
-  .subheader_phone
+  &_phone
     display: block
     text-align: right
     margin-top: 8px
@@ -67,7 +72,7 @@ nav
     text-transform: uppercase
     line-height: 12px
 
-  .subheader_btn
+  &_btn
     margin-top: 19px
     width: 172px
     height: 46px
@@ -80,13 +85,14 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .promo
   min-height: 800px
   background: url('../img/bg/main_bg.jpg') center (center / cover) no-repeat
   padding: 200px 0 135px 0
 
-  .promo_header
+  &_header
     margin: 0
     text-align: center
     color: #ffffff
@@ -95,7 +101,7 @@ nav
     font-weight: 700
     line-height: 60px
 
-  .promo_subheader
+  &_subheader
     margin: 0
     margin-top: 22px
     text-align: center
@@ -105,7 +111,7 @@ nav
     font-weight: 400
     line-height: 36px
 
-  .promo_descr
+  &_descr
     margin-top: 23px
     text-align: center
     color: #ffffff
@@ -113,7 +119,7 @@ nav
     font-weight: 400
     line-height: 24px
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     width: 259px
@@ -127,6 +133,7 @@ nav
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
+    +btn_hover
 
 .reasons
   padding: 71px 0 65px 0
