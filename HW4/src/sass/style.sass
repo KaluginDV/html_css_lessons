@@ -256,13 +256,14 @@ nav
       border-radius: 100%
       margin: 0 auto
       cursor: pointer
-      &::before
+      &:before
         content: ''
         display: block
         width: 14px
         height: 2px
         background-color: $main-color
-      &::after
+        transition: 0.3s all
+      &:after
         content: ''
         display: block
         position: absolute
@@ -271,8 +272,9 @@ nav
         width: 2px
         height: 14px
         background-color: $main-color
-      &::hover
-        &::before, &::after
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
           background-color: $second-color      
 
 .choice
@@ -299,3 +301,30 @@ nav
     width: 100%
     background-color: #070716
     z-index: 1
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nbm
+      margin-bottom: 0px
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      font-size: 17px
+      color: #222222
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: block
+        width: 21px
+        height: 20px 
+        background: url('../icons/mark_blue.png')       
