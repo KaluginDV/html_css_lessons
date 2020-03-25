@@ -2,7 +2,7 @@ $main-color: #1eacc7
 $second-color: #ff5656
 $light-color: #ffffff
 $dark-color: #000000
-$grey-text-color: #222222
+$grey-text-color: rgb(34, 34, 34)
   
 =btn_hover
   &:hover
@@ -29,12 +29,13 @@ nav
   padding: 13px 70px
   margin: 0
   list-style-type: none
-
   &_link
     color: $light-color
     font-size: 15px
     font-weight: 300
-
+    &:hover
+      text-decoration: none
+      color: $main-color
   &_item
     border-right: 2px dotted black
     padding-right: 28px
@@ -184,15 +185,16 @@ nav
   &_white
     background-color: $light-color
     color: $dark-color
+  &_min
+    width: 76px
 
 .subtitle
   position: relative
-  margin-top: 10px
+  margin-top: 19px
   text-align: center
   color: $grey-text-color
   font-size: 17px
   font-weight: 400
-  line-height: 21px
   z-index: 2
   &_white
     color: $light-color
@@ -200,10 +202,11 @@ nav
 .title
   position: relative
   margin-bottom: 0
-  margin-top: 32px
+  margin-top: 38px
   text-align: center
   color: $grey-text-color
   font-size: 38px
+  line-height: 38px
   font-weight: 700
   text-transform: uppercase
   z-index: 2
@@ -249,7 +252,7 @@ nav
       position: absolute
       bottom: 35px
       left: 50%
-      transform: translate(-50%)
+      transform: translateX(-50%)
       width: 26px
       height: 26px
       background-color: $dark-color
@@ -268,11 +271,11 @@ nav
         display: block
         position: absolute
         left: 50%
-        transform: translate(-50%)
+        transform: translateX(-50%)
         width: 2px
         height: 14px
         background-color: $main-color
-        transition: 0.3s all
+        transition: 0.4s all
       &:hover
         &:before, &:after
           background-color: $second-color      
@@ -359,16 +362,15 @@ nav
     line-height: 68px
     text-transform: uppercase
     color: #1fbad6
-		&:hover 
-			text-decoration: none
-			color: #fff
+    &:hover
+      text-decoration: none
+      color: #fff
 
 footer 
-	padding: 14px 23px 39px 23px
-	a 
-		&:hover 
-			text-decoration: none
-      
+  padding: 14px 23px 39px 23px
+  a 
+    &:hover 
+      text-decoration: none
 .footer
   &_divider
     width: 299px
@@ -376,14 +378,14 @@ footer
     background-color: #1fbad6
     margin: 0 auto
   &_wrapper
-		display: flex 
-		justify-content: space-between
-		align-items: flex-start
+    display: flex 
+    justify-content: space-between
+    align-items: flex-start
     padding-top: 32px
   &_wrapper > div
     width: 33%
     &:nth-child(3)
-      display: flex 
+      display: flex
       justify-content: flex-end
   &_social
     width: 160px
@@ -430,3 +432,5 @@ footer
       margin-top: 19px
       text-transform: uppercase
       text-align: center
+
+  &_mobile
